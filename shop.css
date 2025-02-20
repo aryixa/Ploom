@@ -1,0 +1,51 @@
+body {
+    background-color: black;
+}
+
+#image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-wrapper {
+    position: relative;
+    margin: 10px;
+    text-align: center; 
+}
+
+
+#image-container img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+#image-container img:hover {
+    transform: scale(1.1);
+}
+
+.cart-button {
+    background-color: #8b132f; 
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 5px;
+    transition: background-color 0.3s ease-in-out;
+    width: 80%; 
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cart-button:hover {
+    background-color: #ff5e81; 
+    transform: scale(1.05);
+}

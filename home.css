@@ -1,0 +1,151 @@
+:root{
+  --textcolor:rgb(227, 53, 82);
+}
+
+html, body{
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #B43E5B;
+    width: 100%;
+    overflow-x: hidden;
+    height: 100%;     
+   
+}
+body::-webkit-scrollbar {  
+  display: none;
+}
+/* nav styling */
+* {
+    margin: 0;
+    padding: 0;
+  }
+ 
+  .logo {
+    padding: 10px;
+    align-items: center;
+    font-weight: 500;
+    font-family: "Work Sans", serif;;
+    font-style: italic;
+    font-size: 30px ;
+    font-weight: 500;
+    color: pink;
+  }
+  nav {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: black;
+  }
+  .nav ul {
+    display: flex;
+    gap: 15px;
+    
+  }
+  nav ul li a{
+    color: rgb(183, 46, 110);
+    text-decoration: none;
+    font-weight: 300;
+  }
+  .nav ul li {
+    list-style: none;
+    
+  }
+  nav a{
+    padding: 5px;
+  }
+  nav a img {
+    border-radius: 50%;
+    border: 2px solid rgb(115, 115, 179);
+  }
+/* tooltip styling */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  background-color: #2c2a2a;
+  color: white;
+  text-align: center;
+  border-radius: 6px; 
+  padding: 6px 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: -35px; 
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out; 
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.tooltip .tooltip-text {
+  transition-delay: 0.2s;
+}
+
+.content{
+    display: grid;                
+    grid-template-columns: 1fr 280px; 
+    grid-gap: 15px;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    grid-gap: 10px;
+    padding: 20px;  
+}
+.item a{
+text-decoration: none;
+color: white;
+font-size: small;
+
+}
+.item{ 
+    text-align: center;
+}
+
+.item img, .projects img{
+    border-radius: 10px; 
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.item img:hover, .projects img:hover {
+    transform: scale(1.2);
+}
+
+aside{
+    padding: 20px;
+}
+
+.updates,.projects{
+    background-color: #b2ebf2;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px; 
+}
+.projects{
+  justify-items: center;
+}
+.projects a{
+  text-decoration: none;
+  color: var(--textcolor);
+}
+.updates h2,.projects h2{
+    justify-items: center;
+    color: var(--textcolor);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
